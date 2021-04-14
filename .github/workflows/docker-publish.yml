@@ -20,7 +20,10 @@ jobs:
     strategy:
       max-parallel: 3
       matrix:
-        distro: [ubuntu-20.04]
+        distro:
+          - ubuntu-20.10
+          - ubuntu-20.04
+          - ubuntu-18.04
 
     steps:
       - name: Check out the codebase.
@@ -40,7 +43,10 @@ jobs:
     strategy:
       max-parallel: 3
       matrix:
-        distro: [ubuntu-20.04]
+        distro:
+          - ubuntu-20.10
+          - ubuntu-20.04
+          - ubuntu-18.04
 
     steps:
       - name: Check out the codebase.
@@ -54,7 +60,7 @@ jobs:
 
       - name: Push image
         run: |
-          IMAGE_ID=docker.pkg.github.com/${{ github.repository }}/docker-${{ matrix.distro }}-ansible:latest
+          IMAGE_ID=docker.pkg.github.com/${{ github.repository }}/docker-${{ matrix.distro }}-ansible
 
           # Change all uppercase to lowercase
           IMAGE_ID=$(echo $IMAGE_ID | tr '[A-Z]' '[a-z]')
