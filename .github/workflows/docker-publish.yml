@@ -49,7 +49,7 @@ jobs:
         run: docker build ${{ matrix.distro }}/. --file Dockerfile --tag docker-${{ matrix.distro }}-ansible:latest
 
       - name: Log into registry
-        run: echo "${{ secrets.GITHUB_TOKEN  }}" | docker login docker.pkg.github.com -u ${{ github.actor }} --password-stdin
+        run: echo "${{ secrets.DOCKER_HUB  }}" | docker login docker.pkg.github.com -u ${{ github.actor }} --password-stdin
 
       - name: Push image
         run: |
