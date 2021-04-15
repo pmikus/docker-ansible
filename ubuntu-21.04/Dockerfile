@@ -1,4 +1,4 @@
-FROM ubuntu:20.10 as base
+FROM ubuntu:21.04 as base
 MAINTAINER pmikus <peter.mikus [ at ] protonmail.ch>
 
 ENV DEBIAN_FRONTEND=non-interactive
