@@ -55,8 +55,8 @@ jobs:
           file: ${{ matrix.distro }}/Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: false
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/docker-${{ matrix.distro }}-ansible:latest
+          labels: ${{ secrets.DOCKERHUB_USERNAME }}/docker-${{ matrix.distro }}-ansible:latest
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
 
