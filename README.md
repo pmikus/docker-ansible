@@ -5,6 +5,7 @@ Docker images that contains ansible and/or any pre-requistes installed within th
 
 ## Supported tags and Dockerfile:
 
+- [docker-ubuntu-21.10-ansible](https://github.com/pmikus/docker-ansible/blob/master/ubuntu-21.10/Dockerfile)
 - [docker-ubuntu-21.04-ansible](https://github.com/pmikus/docker-ansible/blob/master/ubuntu-21.04/Dockerfile)
 - [docker-ubuntu-20.10-ansible](https://github.com/pmikus/docker-ansible/blob/master/ubuntu-20.10/Dockerfile)
 - [docker-ubuntu-20.04-ansible](https://github.com/pmikus/docker-ansible/blob/master/ubuntu-20.04/Dockerfile)
@@ -15,13 +16,13 @@ Docker images that contains ansible and/or any pre-requistes installed within th
 Pull:
 
 ```shell
-docker pull pmikus/docker-ubuntu-21.04-ansible
+docker pull pmikus/docker-ubuntu-21.10-ansible
 ```
 
 Run it directly.
 
 ```shell
-docker run -it pmikus/docker-ubuntu-21.04-ansible /bin/bash
+docker run -it pmikus/docker-ubuntu-21.10-ansible /bin/bash
 ```
 
 ## Author:
