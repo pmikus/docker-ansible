@@ -1,6 +1,6 @@
-FROM ubuntu:21.04 as base
+FROM ubuntu:23.04 as base
 
-ENV DEBIAN_FRONTEND=non-interactive
+ENV DEBIAN_FRONTEND=noninteractive
 
 # Install required dependencies.
 RUN apt-get update -y \
@@ -25,6 +25,10 @@ RUN apt-get update -y \
  && rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/*.deb \
  && apt-get autoremove \
  && apt-get clean
+
+# Install Ansible inventory file.
+RUN mkdir -p /etc/ansible \
+ && echo "[local]\nlocalhost ansible_connection=local" > /etc/ansible/hosts
 
 FROM base
 

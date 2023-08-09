@@ -5,12 +5,9 @@ Docker images that contains ansible and/or any pre-requistes installed within th
 
 ## Supported tags and Dockerfile:
 
-- [docker-ubuntu-22.10-ansible](https://github.com/pmikus/docker-ansible/blob/master/ubuntu-22.10/Dockerfile)
-- [docker-ubuntu-22.04-ansible](https://github.com/pmikus/docker-ansible/blob/master/ubuntu-22.04/Dockerfile)
-- [docker-ubuntu-21.10-ansible](https://github.com/pmikus/docker-ansible/blob/master/ubuntu-21.10/Dockerfile)
-- [docker-ubuntu-21.04-ansible](https://github.com/pmikus/docker-ansible/blob/master/ubuntu-21.04/Dockerfile)
-- [docker-ubuntu-20.10-ansible](https://github.com/pmikus/docker-ansible/blob/master/ubuntu-20.10/Dockerfile)
 - [docker-ubuntu-20.04-ansible](https://github.com/pmikus/docker-ansible/blob/master/ubuntu-20.04/Dockerfile)
+- [docker-ubuntu-22.04-ansible](https://github.com/pmikus/docker-ansible/blob/master/ubuntu-22.04/Dockerfile)
+- [docker-ubuntu-23.04-ansible](https://github.com/pmikus/docker-ansible/blob/master/ubuntu-22.10/Dockerfile)
 
 ## How to use:
 
