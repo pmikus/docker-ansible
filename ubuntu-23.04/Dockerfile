@@ -20,6 +20,7 @@ RUN apt-get update -y \
     software-properties-common \
     sudo \
     wget \
+ && rm -f /usr/lib/python3.11/EXTERNALLY-MANAGED \
  && python3 -m pip install --no-cache-dir -U pip wheel \
  && python3 -m pip install --no-cache-dir -U ansible \
  && rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/*.deb \
