@@ -7,11 +7,11 @@ RUN apt-get update -y \
  && apt-get --no-install-recommends -y upgrade \
  && apt-get install --no-install-recommends -y \
     apt-transport-https \
-    build-essential \
+    curl \
+    gcc \
+    gnupg \
     iputils-ping \
     iproute2 \
-    libffi-dev \
-    libssl-dev \
     python3 \
     python3-apt \
     python3-dev \
@@ -25,7 +25,6 @@ RUN apt-get update -y \
  && rm -f /usr/lib/python3.11/EXTERNALLY-MANAGED \
  && python3 -m pip install --no-cache-dir -U pip wheel \
  && python3 -m pip install --no-cache-dir -U ansible \
- && python3 -m pip install --no-cache-dir -U cryptography \
  && rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/*.deb \
  && apt-get autoremove \
  && apt-get clean
