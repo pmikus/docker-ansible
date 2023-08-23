@@ -13,7 +13,6 @@ name: "Container CI"
 
 jobs:
   # Build image.
-  # See also https://docs.docker.com/docker-hub/builds/
   build:
     runs-on: "ubuntu-latest"
     permissions:
